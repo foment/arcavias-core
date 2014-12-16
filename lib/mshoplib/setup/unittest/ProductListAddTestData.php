@@ -338,6 +338,7 @@ class MW_Setup_Task_ProductListAddTestData extends MW_Setup_Task_Abstract
 			$listItem->setDateEnd( $dataset['end'] );
 			$listItem->setConfig( $dataset['config'] );
 			$listItem->setPosition( $dataset['pos'] );
+			$listItem->setQuantity( $dataset['quantity'] );
 			$listItem->setStatus( $dataset['status'] );
 
 			$productListManager->saveItem( $listItem, false );

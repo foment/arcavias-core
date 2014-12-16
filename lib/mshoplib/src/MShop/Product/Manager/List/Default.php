@@ -65,6 +65,13 @@ class MShop_Product_Manager_List_Default
 			'type'=> 'string',
 			'internaltype'=> MW_DB_Statement_Abstract::PARAM_STR,
 		),
+		'product.list.quantity'=> array(
+			'code'=>'product.list.quantity',
+			'internalcode'=>'mproli."quantity"',
+			'label'=>'Product list quantity',
+			'type'=> 'integer',
+			'internaltype'=> MW_DB_Statement_Abstract::PARAM_INT,
+		),
 		'product.list.datestart' => array(
 			'code'=>'product.list.datestart',
 			'internalcode'=>'mproli."start"',

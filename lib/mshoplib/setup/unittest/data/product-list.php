@@ -68,8 +68,8 @@ return array (
 		array( 'parentid' => 'product/U:TEST', 'typeid' => 'product/default', 'domain' => 'product', 'refid' => 'product/U:TESTSUB04', 'start' => null, 'end' => null, 'config' => array(), 'pos' => 3, 'status' => 1 ),
 		array( 'parentid' => 'product/U:TEST', 'typeid' => 'product/default', 'domain' => 'product', 'refid' => 'product/U:TESTSUB05', 'start' => null, 'end' => null, 'config' => array(), 'pos' => 4, 'status' => 1 ),
 		array( 'parentid' => 'product/U:TESTP', 'typeid' => 'product/default', 'domain' => 'product', 'refid' => 'product/U:TESTPSUB01', 'start' => null, 'end' => null, 'config' => array(), 'pos' => 0, 'status' => 1 ),
-		array( 'parentid' => 'product/U:BUNDLE', 'typeid' => 'product/default', 'domain' => 'product', 'refid' => 'product/CNC', 'start' => null, 'end' => null, 'config' => array(), 'pos' => 0, 'status' => 1 ),
-		array( 'parentid' => 'product/U:BUNDLE', 'typeid' => 'product/default', 'domain' => 'product', 'refid' => 'product/CNE', 'start' => null, 'end' => null, 'config' => array(), 'pos' => 1, 'status' => 1 ),
+		array( 'parentid' => 'product/U:BUNDLE', 'typeid' => 'product/default', 'domain' => 'product', 'refid' => 'product/CNC', 'start' => null, 'end' => null, 'config' => array(), 'pos' => 0, 'status' => 1, 'quantity' => 1 ),
+		array( 'parentid' => 'product/U:BUNDLE', 'typeid' => 'product/default', 'domain' => 'product', 'refid' => 'product/CNE', 'start' => null, 'end' => null, 'config' => array(), 'pos' => 1, 'status' => 1, 'quantity' => 2 ),
 
 		array( 'parentid' => 'product/CNE', 'typeid' => 'attribute/default', 'domain' => 'attribute', 'refid' => 'attribute/product/size/xs', 'start' => null, 'end' => null, 'config' => array(), 'pos' => 0, 'status' => 1 ),
 		array( 'parentid' => 'product/CNE', 'typeid' => 'attribute/variant', 'domain' => 'attribute', 'refid' => 'attribute/product/length/30', 'start' => null, 'end' => null, 'config' => array(), 'pos' => 1, 'status' => 1 ),

@@ -362,6 +362,7 @@ class MW_Setup_Task_MShopAddDataAbstract extends MW_Setup_Task_Abstract
 			$listItem->setConfig( $entry['list-config'] );
 			$listItem->setPosition( $entry['list-position'] );
 			$listItem->setStatus( $entry['list-status'] );
+			$listItem->setQuantity( $entry['list-quantity'] );
 			$listItem->setRefId( $codes[ $entry['code'] ] );
 
 			$listManager->saveItem( $listItem, false );

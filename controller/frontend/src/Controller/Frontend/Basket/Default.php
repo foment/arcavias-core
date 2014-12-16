@@ -433,11 +433,15 @@ class Controller_Frontend_Basket_Default
 		MShop_Product_Item_Interface $productItem, array $variantAttributeIds, $warehouse )
 	{
 		$quantity = $orderBaseProductItem->getQuantity();
-		$products = $subProductIds = $orderProducts = array();
+		$products = $subProductIds = $quantities = $orderProducts = array();
 		$orderProductManager = MShop_Factory::createManager( $this->_getContext(), 'order/base/product' );
 
 		foreach( $productItem->getRefItems( 'product', null, 'default' ) as $item ) {
 			$subProductIds[] = $item->getId();
+		}
+
+		foreach( $productItem->getListItems( 'product', 'default' ) as $listItem ) {
+			$quantities[ $listItem->getRefId() ] = $listItem->getQuantity() * $quantity;
 		}
 
 		if( count( $subProductIds ) > 0 )
@@ -461,7 +465,8 @@ class Controller_Frontend_Basket_Default
 			$orderProduct = $orderProductManager->createItem();
 			$orderProduct->copyFrom( $product );
 			$orderProduct->setWarehouseCode( $warehouse );
-			$orderProduct->setPrice( $this->_calcPrice( $orderProduct, $prices, $quantity ) );
+			$orderProduct->setPrice( reset( $prices ) );
+			$orderProduct->setQuantity( $quantities[ $product->getId() ] );
 
 			$orderProducts[] = $orderProduct;
 		}

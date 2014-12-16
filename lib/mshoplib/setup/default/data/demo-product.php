@@ -720,12 +720,12 @@ return array(
 			array(
 				'code' => 'demo-selection-article',
 				'list-type' => 'default', 'list-position' => 0, 'list-config' => array(),
-				'list-start' => null, 'list-end' => null, 'list-status' => 1
+				'list-start' => null, 'list-end' => null, 'list-status' => 1, 'list-quantity' => 1
 			),
 			array(
 				'code' => 'demo-article',
 				'list-type' => 'default', 'list-position' => 1, 'list-config' => array(),
-				'list-start' => null, 'list-end' => null, 'list-status' => 1
+				'list-start' => null, 'list-end' => null, 'list-status' => 1, 'list-quantity' => 2
 			),
 		),
 		'stock' => array(

@@ -262,6 +262,33 @@ class MShop_Common_Item_List_Default
 
 
 	/**
+	 * Returns the quantity of the list item.
+	 *
+	 * @return integer Quantity of the item
+	 */
+	public function getQuantity()
+	{
+		return ( isset( $this->_values['quantity'] ) ? (int) $this->_values['quantity'] : null );
+	}
+
+
+	/**
+	 * Sets the new quantity of the list item.
+	 *
+	 * @param integer $quantity Quantity of the item
+	 */
+	public function setQuantity( $quantity )
+	{
+		if ( $quantity == $this->getQuantity() ) {
+			return;
+		}
+
+		$this->_values['quantity'] = (int) $quantity;
+		$this->setModified();
+	}
+
+
+	/**
 	 * Returns the configuration of the list item.
 	 *
 	 * @return string Custom configuration values

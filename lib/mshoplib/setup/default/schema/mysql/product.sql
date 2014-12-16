@@ -157,6 +157,8 @@ CREATE TABLE "mshop_product_list" (
 	"domain" VARCHAR(32) NOT NULL,
 	-- Featured reference
 	"refid" VARCHAR(32) NOT NULL,
+	-- Quantity - related to the bundle products
+	"quantity" int(11) DEFAULT NULL,
 	-- Valid from
 	"start" DATETIME DEFAULT NULL,
 	-- Valid until
